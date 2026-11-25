@@ -430,7 +430,7 @@ b.addEventListener('click',function(){var o=m.classList.toggle('otwarte');b.setA
 m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otwarte');b.setAttribute('aria-expanded',false)}});
 var linki=[].slice.call(m.querySelectorAll('a:not(.klub)'));
 var sek=linki.map(function(a){return document.querySelector(a.getAttribute('href'))});
-addEventListener('scroll',function(){var y=scrollY+120,akt=-1;sek.forEach(function(s,i){if(s&&s.offsetTop<=y)akt=i});linki.forEach(function(a,i){a.classList.toggle('aktywny',i===akt)})},{passive:true});
+addEventListener('scroll',function(){var y=scrollY+120,akt=-1;sek.forEach(function(s,i){if(s&&s.offsetTop<=y)akt=i});if(innerHeight+scrollY>=document.body.scrollHeight-4)akt=sek.length-1;linki.forEach(function(a,i){a.classList.toggle('aktywny',i===akt)})},{passive:true});
 })();
 </script>
 </body>
