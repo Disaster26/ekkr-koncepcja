@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Klub kota rasowego Warszawa | Elitarny Klub Kota Rasowego EKKR</title>
+<meta name="description" content="Elitarny Klub Kota Rasowego w Warszawie, członek Felis Polonia i FIFe od 2007 roku. Rejestracja kotów i hodowli, rodowody, nostryfikacje, międzynarodowe wystawy kotów rasowych.">
+<link rel="icon" href="img/znak.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="fonts/jost-rdzen.woff2" crossorigin>
+<link rel="preload" as="image" href="img/koty-tel.webp" media="(max-width:759px)">
+<link rel="preload" as="image" imagesrcset="img/hero-1080.webp 1080w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" imagesizes="(min-width:1920px) 1920px, 100vw" media="(min-width:760px) and (max-width:1920px)">
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--ink:#0b0b0b;--tusz:#1b1b1d;--szary:#e6e7eb;--jasny:#f1f2f4;--tekst:#2a2b2e;--cichy:#5d6068;--zloto:#b8901f;--linia:#d7d9de}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Jost,"Century Gothic",system-ui,sans-serif;color:var(--tekst);background:#fff}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:500;line-height:1.15;color:var(--ink);margin:0}
+.wrap{width:min(1180px,100% - 40px);margin:0 auto}
+/* nagłówek */
+.top{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo .znak{width:40px;height:52px;background:#fff;border:2px solid var(--ink);display:grid;place-items:center;overflow:hidden}
+.logo .znak img{width:38px;height:38px}
+.logo b{display:block;font-weight:600;font-size:20px;letter-spacing:.06em;line-height:1}
+.logo small{display:block;font-size:13px;color:var(--cichy);line-height:1.3;margin-top:3px}
+.menu{display:flex;align-items:center;gap:26px;font-size:16px}
+.menu a{text-decoration:none;color:var(--ink);padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--zloto)}
+.menu a.aktywny{border-color:var(--ink)}
+.menu .klub{border:1.5px solid var(--ink);padding:8px 14px}
+.menu .klub:hover{background:var(--ink);color:#fff}
+.burger{display:none;background:none;border:0;padding:10px;margin-right:-10px;cursor:pointer}
+.burger span{display:block;width:26px;height:2px;background:var(--ink);margin:6px 0;transition:.2s}
+/* pierwszy ekran */
+.hero{position:relative;background:#dfe0e4;overflow:hidden;min-height:calc(100vh - 68px);display:flex;flex-direction:column;justify-content:flex-end}
+.hero-foto{width:100%}
+.hero-foto img{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 9%);mask-image:linear-gradient(180deg,transparent 0,#000 9%)}
+.hero-foto{position:relative;max-width:2560px;margin:0 auto}
+.hero-foto img{width:100%;aspect-ratio:1920/800}
+@media (min-width:1921px){.hero-foto img{aspect-ratio:2560/800}}
+@media (min-width:2561px){.hero-foto::before,.hero-foto::after{content:"";position:absolute;top:0;bottom:0;width:80px;z-index:1;pointer-events:none}
+.hero-foto::before{left:0;background:linear-gradient(90deg,var(--szary),rgba(230,231,235,0))}
+.hero-foto::after{right:0;background:linear-gradient(-90deg,var(--szary),rgba(230,231,235,0))}}
+.hero-txt{position:absolute;z-index:2;left:50%;top:0;height:80%;width:clamp(380px,31vw,640px);transform:translateX(-50%);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero h1{font-size:clamp(30px,2.75vw,52px);font-weight:500}
+.hero h1 span{display:block;font-size:.56em;font-weight:400;color:var(--tekst);margin-top:.5em;line-height:1.3}
+.hero p{margin:18px 0 0;font-size:clamp(15px,1.05vw,19px);color:var(--cichy);max-width:30em}
+.przyciski{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;font:500 16px/1 Jost,sans-serif;text-decoration:none;border:2px solid var(--ink);transition:background .15s,color .15s}
+.btn.pelny{background:var(--ink);color:#fff}
+.btn.pelny:hover{background:#2c2c2e}
+.btn.obrys{background:rgba(255,255,255,.55);color:var(--ink)}
+.btn.obrys:hover{background:#fff}
+.hero-tel{display:none}
+/* kreska pędzla jako motyw */
+.kreska{display:block;width:189px;height:18px;background:url(img/kreska-mala.webp) left center/189px 18px no-repeat;margin:14px 0 0 -4px}
+section{padding:96px 0}
+.naglowek{max-width:760px;margin-bottom:44px}
+.naglowek h2{font-size:clamp(30px,3.2vw,44px)}
+.naglowek p{margin:18px 0 0;color:var(--cichy);font-size:18px}
+/* wystawa - sekcja czarna jak tusz */
+.wystawa{background:var(--ink);color:#d9dade}
+.wystawa h2,.wystawa h3{color:#fff}
+.wystawa .naglowek p{color:#b5b7be}
+.wystawa .kreska{filter:invert(1)}
+.wyst-siatka{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:0;border-top:1px solid #34353a}
+.wyst-siatka>div{padding:28px 28px 8px 0}
+.wyst-siatka>div+div{padding-left:28px;border-left:1px solid #34353a}
+.wyst-siatka h3{font-size:20px;margin-bottom:12px}
+.wyst-siatka p{margin:0 0 12px}
+.wyst-siatka ul{list-style:none;margin:0;padding:0}
+.wyst-siatka li{display:flex;gap:14px;padding:6px 0;border-bottom:1px solid #222327}
+.wyst-siatka li b{min-width:98px;font-weight:500;color:#fff}
+.data{font-size:clamp(34px,4vw,56px);color:#fff;line-height:1.05;font-weight:500}
+.data small{display:block;font-size:18px;color:#b5b7be;margin-top:10px;font-weight:400;line-height:1.4}
+.uwaga{margin-top:36px;color:#9ea1a9;font-size:15px}
+/* dla hodowców */
+.hodowcy{background:#fff}
+.dwie{display:grid;grid-template-columns:1fr 1fr;gap:72px}
+.cennik{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}
+.cennik li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:14px 0;border-bottom:1px solid var(--linia)}
+.cennik li span{color:var(--tekst)}
+.cennik li b{font-weight:600;color:var(--ink);white-space:nowrap;font-size:18px}
+.cennik-opis{font-size:15px;color:var(--cichy);margin-top:14px}
+.sprawy h3{font-size:22px;margin:0 0 8px}
+.sprawy p{margin:0 0 26px}
+.sprawy a{color:var(--ink);text-decoration-color:var(--zloto);text-underline-offset:4px;text-decoration-thickness:2px}
+/* członkostwo */
+.czlonek{background:var(--jasny)}
+.czlonek .dwie{align-items:start}
+.kroki{margin:0;padding:0 0 0 1.2em}
+.kroki li{padding:0 0 18px 6px}
+.kroki li::marker{font-weight:600;color:var(--ink)}
+.dyzur{background:#fff;padding:32px;border-top:4px solid var(--ink)}
+.dyzur h3{font-size:22px;margin-bottom:10px}
+.dyzur p{margin:0 0 12px}
+.dyzur .duzo{font-size:26px;color:var(--ink);font-weight:500;line-height:1.25}
+/* hodowle */
+.kategorie{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink)}
+.kategorie>div{padding:26px 24px 10px 0}
+.kategorie>div+div{padding-left:24px;border-left:1px solid var(--linia)}
+.kategorie h3{font-size:20px;margin-bottom:14px}
+.kategorie ul{list-style:none;margin:0;padding:0}
+.kategorie li{padding:5px 0}
+.kategorie a{text-decoration:none;color:var(--tekst)}
+.kategorie a:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--zloto);text-underline-offset:3px}
+.kategorie abbr{text-decoration:none;font-weight:600;color:var(--ink);display:inline-block;min-width:3.2em}
+/* o klubie */
+.oklubie{background:var(--szary)}
+.oklubie .wrap{display:grid;grid-template-columns:minmax(0,560px) 1fr;gap:72px;align-items:end}
+.oklubie figure{margin:0;align-self:end}
+.oklubie figure img{width:100%;max-width:560px}
+.oklubie .tekst{padding-bottom:8px}
+.zarzad{list-style:none;margin:24px 0 0;padding:0;border-top:1px solid #c9ccd3}
+.zarzad li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #c9ccd3}
+.zarzad li span{color:var(--cichy)}
+.zarzad li b{font-weight:500;color:var(--ink);text-align:right}
+/* kontakt */
+.kontakt .dwie{gap:56px}
+.kontakt dl{margin:0}
+.kontakt dt{font-weight:600;color:var(--ink);margin-top:20px}
+.kontakt dt:first-child{margin-top:0}
+.kontakt dd{margin:4px 0 0}
+.kontakt a{color:var(--ink)}
+.tel{font-size:22px;font-weight:500;text-decoration:none;color:var(--ink)}
+.mapa{border:0;width:100%;height:100%;min-height:420px;filter:grayscale(.35)}
+/* stopka */
+.stopka{background:var(--ink);color:#b5b7be;padding:56px 0 28px;font-size:15px}
+.stopka .kol{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.stopka b{color:#fff;font-weight:500}
+.stopka a{color:#d9dade;text-decoration:none}
+.stopka p{margin:0 0 6px}
+.stopka .dol{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid #2a2b2f}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+/* telefon i tablet */
+@media (max-width:1100px){
+ .menu{gap:18px;font-size:15px}
+ .hero-txt{width:36%}
+ .kategorie{grid-template-columns:1fr 1fr}
+ .kategorie>div:nth-child(3){padding-left:0;border-left:0}
+ .kategorie>div:nth-child(n+3){border-top:1px solid var(--linia)}
+}
+@media (max-width:759px){
+ body{font-size:16px}
+ .wrap{width:calc(100% - 36px)}
+ .top .wrap{height:60px}
+ .logo .znak{width:34px;height:44px}.logo .znak img{width:32px;height:32px}
+ .logo b{font-size:18px}.logo small{font-size:12px}
+ .burger{display:block}
+ .menu{position:fixed;inset:60px 0 auto 0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 18px 22px;border-bottom:2px solid var(--ink);display:none;font-size:18px}
+ .menu.otwarte{display:flex}
+ .menu a{padding:14px 0;border-bottom:1px solid var(--linia)}
+ .menu a.aktywny{border-bottom-color:var(--linia);font-weight:600}
+ .menu .klub{margin-top:16px;text-align:center;border:2px solid var(--ink)}
+ .hero{min-height:calc(100svh - 60px);justify-content:flex-start;background:var(--szary)}
+ .hero-foto{display:none}
+ .hero-txt{position:static;transform:none;width:auto;height:auto;flex:1 0 auto;padding:22px 18px 18px;align-items:flex-start;text-align:left;justify-content:center}
+ .hero h1{font-size:clamp(27px,7.6vw,34px)}
+ .hero h1 span{font-size:.6em}
+ .hero p{margin-top:12px;font-size:15.5px;line-height:1.5}
+ .przyciski{margin-top:24px;justify-content:flex-start;width:100%;flex-wrap:nowrap}
+ .btn{min-height:48px;padding:0 16px;font-size:15.5px;flex:1 1 auto}
+ .hero-tel{display:block;flex:none}
+ .hero-tel img{width:100%;max-width:560px;margin:0 auto}
+ section{padding:64px 0}
+ .wyst-siatka,.dwie,.oklubie .wrap,.stopka .kol{grid-template-columns:1fr}
+ .wyst-siatka>div,.wyst-siatka>div+div{padding:22px 0 8px;border-left:0}
+ .wyst-siatka>div+div{border-top:1px solid #34353a}
+ .dwie{gap:40px}
+ .kategorie{grid-template-columns:1fr 1fr}
+ .kategorie>div,.kategorie>div+div{padding:20px 12px 8px 0;border-left:0}
+ .kategorie>div:nth-child(even){padding-left:12px;border-left:1px solid var(--linia)}
+ .oklubie .wrap{gap:28px}
+ .oklubie figure{order:2;margin:0 auto -64px;width:100%;max-width:420px}
+ .kategorie li{font-size:15px}
+ .kategorie abbr{min-width:2.9em}
+ .mapa{min-height:320px}
+ .stopka .kol{grid-template-columns:1fr 1fr;gap:24px}
+ .stopka .kol>div:first-child{grid-column:1/-1}
+}
+@media (max-width:370px){.btn{font-size:14.5px;padding:0 10px}.hero h1{font-size:26px}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="EKKR - strona główna"><span class="znak"><img src="img/znak.svg" alt="" width="38" height="38"></span><span><b>EKKR</b><small>Elitarny Klub Kota Rasowego</small></span></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav class="menu" id="menu">
+   <a href="#wystawy">Wystawy</a>
+   <a href="#hodowcy">Dla hodowców</a>
+   <a href="#czlonkostwo">Członkostwo</a>
+   <a href="#hodowle">Hodowle</a>
+   <a href="#o-klubie">O klubie</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="klub" href="#czlonkostwo">Strefa klubowicza</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+ <div class="hero-foto"><picture>
+  <source media="(min-width:1921px)" srcset="img/hero-2560.webp" width="2560" height="800">
+  <img src="img/hero-1920.webp" srcset="img/hero-1080.webp 1080w, img/hero-1440.webp 1440w, img/hero-1920.webp 1920w" sizes="(min-width:1920px) 1920px, 100vw" width="1920" height="800" alt="Kot syberyjski w koronie i kot orientalny na jasnym tle" fetchpriority="high"></picture>
+ </div>
+ <div class="hero-txt">
+  <h1>Klub kota rasowego w&nbsp;Warszawie<span>Hodowcy i miłośnicy kotów rasowych od&nbsp;2006&nbsp;roku</span></h1>
+  <p>Członek federacji Felis Polonia i FIFe. Rejestrujemy koty i hodowle, wydajemy rodowody i organizujemy międzynarodowe wystawy kotów rasowych.</p>
+  <div class="przyciski">
+   <a class="btn pelny" href="#czlonkostwo">Jak zostać członkiem</a>
+   <a class="btn obrys" href="#wystawy">Wystawy</a>
+  </div>
+ </div>
+ <div class="hero-tel"><img src="img/koty-tel.webp" width="1100" height="655" alt="Kot syberyjski w koronie i kot orientalny" fetchpriority="high"></div>
+</section>
+
+<section class="wystawa" id="wystawy">
+ <div class="wrap">
+  <div class="naglowek">
+   <h2>Międzynarodowe wystawy kotów rasowych</h2>
+   <span class="kreska"></span>
+   <p>Klub organizuje w Warszawie międzynarodowe wystawy kotów rasowych z sędziami z Polski i z zagranicy. Na wystawie można porozmawiać z hodowcami o rasie, jej charakterze i pielęgnacji, zanim kot zamieszka w domu.</p>
+  </div>
+  <div class="wyst-siatka">
+   <div>
+    <p class="data">21-22 listopada 2026<small>65. i 66. Międzynarodowa Wystawa Kotów Rasowych<br>Centrum Sportu Wilanów, hala sportowa, ul. Wiertnicza 26A, Warszawa</small></p>
+   </div>
+   <div>
+    <h3>Dla zwiedzających</h3>
+    <ul>
+     <li><b>Sobota</b>10:00-18:00</li>
+     <li><b>Niedziela</b>9:30-17:30</li>
+     <li><b>Bilet</b>30 zł, ulgowy 20 zł</li>
+     <li><b>Wstęp wolny</b>dzieci do 6 lat, osoby z niepełnosprawnością z opiekunem</li>
+    </ul>
+    <p style="margin-top:14px">Bilety do kupienia na miejscu. Na wystawie działa kiermasz z karmą, zabawkami i akcesoriami dla kotów.</p>
+   </div>
+   <div>
+    <h3>Dla wystawców</h3>
+    <p>Sędziowie: Daria Łukasik-Weber, Magdalena Kudra, Marcin Biernaczyk, Mirosław Skotarczyk (Polska), Charles Spijker, Alexey Shchukin (Holandia).</p>
+    <p>W sobotę Best in Show i BIS Breed MCO, w niedzielę Best in Show i BIS Breed NFO. Kontrola weterynaryjna od 7:30.</p>
+   </div>
+  </div>
+  <p class="uwaga">Na wystawie obowiązuje zakaz sprzedaży kociąt. Zapowiedź kolejnej wystawy, zgłoszenia i warunki weterynaryjne publikujemy w tym miejscu.</p>
+ </div>
+</section>
+
+<section class="hodowcy" id="hodowcy">
+ <div class="wrap">
+  <div class="naglowek">
+   <h2>Dla hodowców</h2>
+   <span class="kreska"></span>
+   <p>Prowadzimy sprawy hodowlane członków klubu i przekazujemy je do Biura Rodowodowego Felis Polonia. Opłatę wnosi się razem z wnioskiem.</p>
+  </div>
+  <div class="dwie">
+   <div class="sprawy">
+    <h3>Rejestracja kota</h3>
+    <p>Kartę rejestracji kota składa się razem ze skanem lub kopią rodowodu. Rejestracja kotów w klubie jest bezpłatna.</p>
+    <h3>Mioty i rodowody</h3>
+    <p>Mioty kotów z bazy ksiąg rodowodowych FPL zgłasza się elektronicznie, przez <a href="#hodowcy">kartę miotu Felis Polonia</a>. Rodowody pięciopokoleniowe wystawia Biuro Rodowodowe FPL.</p>
+    <h3>Przydomek hodowlany i nostryfikacja</h3>
+    <p>We wniosku o przydomek podaje się sześć propozycji nazwy, bo zarejestrowanego przydomka nie można zmienić. Rodowód z innej organizacji niż FPL wymaga nostryfikacji.</p>
+    <h3>Dokumenty do pobrania</h3>
+    <p>Deklaracja członkowska, zgody RODO dla FPL i EKKR, karta rejestracji kota, wnioski o nostryfikację, przydomek i transfer. <a href="#hodowcy">Wszystkie druki w jednym miejscu</a></p>
+   </div>
+   <div>
+    <ul class="cennik">
+     <li><span>Rodowód pięciopokoleniowy</span><b>40 zł</b></li>
+     <li><span>Duplikat rodowodu</span><b>35 zł</b></li>
+     <li><span>Nostryfikacja, wklejka do rodowodu</span><b>50 zł</b></li>
+     <li><span>Nostryfikacja, nowy rodowód FPL i FIFe</span><b>70 zł</b></li>
+     <li><span>Transfer</span><b>70 zł</b></li>
+     <li><span>Dyplom</span><b>25 zł</b></li>
+     <li><span>Przydomek hodowlany</span><b>230 zł</b></li>
+     <li><span>Rejestracja kota w klubie</span><b>bezpłatnie</b></li>
+     <li><span>Wizytówka hodowli na stronie klubu</span><b>bezpłatnie</b></li>
+    </ul>
+    <p class="cennik-opis">Wpłaty wyłącznie na rachunek bankowy klubu, w tytule rodzaj opłaty. Pełny cennik z rozetami i przesyłką kurierską w zakładce Opłaty.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="czlonek" id="czlonkostwo">
+ <div class="wrap">
+  <div class="naglowek">
+   <h2>Jak zostać członkiem klubu</h2>
+   <span class="kreska"></span>
+   <p>Zrzeszamy hodowców i miłośników kotów z całej Polski. Klub ma być miejscem życzliwym i przejrzystym w działaniu, tak jak przy jego założeniu w 2006 roku.</p>
+  </div>
+  <div class="dwie">
+   <ol class="kroki">
+    <li>Wypełnij komputerowo deklarację członkowską i podpisz ją własnoręcznie.</li>
+    <li>Dołącz podpisane zgody na przetwarzanie danych dla Felis Polonia i dla EKKR oraz krótkie uzasadnienie: kot wybranej rasy w Twoim życiu, ścieżka hodowlana, plany wystawowe.</li>
+    <li>Złóż dokumenty w oryginale na dyżurze klubu albo wyślij je kurierem na adres korespondencyjny.</li>
+    <li>Opłać składkę roczną: 120 zł, dla kolejnej osoby pod tym samym adresem 50%.</li>
+   </ol>
+   <div class="dyzur">
+    <h3>Dyżur klubu</h3>
+    <p class="duzo">Pierwszy wtorek miesiąca, 17:00-19:00</p>
+    <p>ul. Nowolipie 18b, Warszawa</p>
+    <p style="margin:18px 0 0;color:var(--cichy)">Adres korespondencyjny: Elitarny Klub Kota Rasowego, ul. Pod Borem 15/1, 05-540 Ustanów, paczkomat USA01A.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="hodowle" id="hodowle">
+ <div class="wrap">
+  <div class="naglowek">
+   <h2>Hodowle członków klubu</h2>
+   <span class="kreska"></span>
+   <p>Rasy według kategorii FIFe. Przy każdej rasie lista hodowli z miastem, telefonem i adresem e-mail hodowcy.</p>
+  </div>
+  <div class="kategorie">
+   <div><h3>Kategoria 1</h3><ul>
+    <li><a href="#hodowle"><abbr>EXO</abbr>egzotyczne</a></li>
+    <li><a href="#hodowle"><abbr>PER</abbr>perskie</a></li>
+    <li><a href="#hodowle"><abbr>RAG</abbr>ragdoll</a></li>
+    <li><a href="#hodowle"><abbr>SBI</abbr>święta birma</a></li></ul></div>
+   <div><h3>Kategoria 2</h3><ul>
+    <li><a href="#hodowle"><abbr>ACL</abbr>american curl</a></li>
+    <li><a href="#hodowle"><abbr>MCO</abbr>maine coon</a></li>
+    <li><a href="#hodowle"><abbr>NEM</abbr>neva masquerade</a></li>
+    <li><a href="#hodowle"><abbr>NFO</abbr>norweskie leśne</a></li>
+    <li><a href="#hodowle"><abbr>SIB</abbr>syberyjskie</a></li>
+    <li><a href="#hodowle"><abbr>TUA</abbr>angora turecka</a></li>
+    <li><a href="#hodowle"><abbr>TUV</abbr>turecki van</a></li></ul></div>
+   <div><h3>Kategoria 3</h3><ul>
+    <li><a href="#hodowle"><abbr>BEN</abbr>bengalskie</a></li>
+    <li><a href="#hodowle"><abbr>BML</abbr>burmilla</a></li>
+    <li><a href="#hodowle"><abbr>BSH</abbr>brytyjskie</a></li>
+    <li><a href="#hodowle"><abbr>BUR</abbr>burmskie</a></li>
+    <li><a href="#hodowle"><abbr>CHA</abbr>chartreux</a></li>
+    <li><a href="#hodowle"><abbr>CYM</abbr>cymric</a></li></ul></div>
+   <div><h3>Kategoria 4</h3><ul>
+    <li><a href="#hodowle"><abbr>ABI</abbr>abisyńskie</a></li>
+    <li><a href="#hodowle"><abbr>BAL</abbr>balijskie</a></li>
+    <li><a href="#hodowle"><abbr>CRX</abbr>cornish rex</a></li>
+    <li><a href="#hodowle"><abbr>DRX</abbr>devon rex</a></li>
+    <li><a href="#hodowle"><abbr>DSP</abbr>sfinks doński</a></li>
+    <li><a href="#hodowle"><abbr>PEB</abbr>peterbald</a></li>
+    <li><a href="#hodowle"><abbr>RUS</abbr>rosyjskie niebieskie</a></li>
+    <li><a href="#hodowle"><abbr>SPH</abbr>sfinks</a></li></ul></div>
+  </div>
+ </div>
+</section>
+
+<section class="oklubie" id="o-klubie">
+ <div class="wrap">
+  <figure><img src="img/kot-korona.webp" width="630" height="605" alt="Kot syberyjski w koronie" decoding="async"></figure>
+  <div class="tekst">
+   <div class="naglowek" style="margin-bottom:0">
+    <h2>O klubie</h2>
+    <span class="kreska"></span>
+    <p>Elitarny Klub Kota Rasowego powstał 6 czerwca 2006 roku z inicjatywy hodowców i miłośników kotów rasowych. Od 17 marca 2007 roku jest pełnoprawnym członkiem Felis Polonia, polskiej federacji należącej do FIFe.</p>
+    <p>Upowszechniamy wiedzę o kotach rasowych i domowych, dbamy o polskie linie hodowlane, organizujemy wystawy i doradzamy w hodowli.</p>
+   </div>
+   <ul class="zarzad">
+    <li><span>Prezes</span><b>Marek Chadaj</b></li>
+    <li><span>Wiceprezes ds. finansowych</span><b>Ireneusz Bożykowski-Hejcelman</b></li>
+    <li><span>Sekretarz generalny</span><b>Beata Zdaniak</b></li>
+    <li><span>Członkowie zarządu</span><b>Anna Grabowiec, Ilona Senderek-Wójcik</b></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <div class="wrap">
+  <div class="naglowek">
+   <h2>Kontakt</h2>
+   <span class="kreska"></span>
+  </div>
+  <div class="dwie">
+   <dl>
+    <dt>Sprawy hodowlane: rodowody, karty miotów, nostryfikacje</dt>
+    <dd><a class="tel" href="tel:+48535225103">535 225 103</a><br>Beata Zdaniak, wtorki 17:00-19:00</dd>
+    <dt>Sprawy finansowe: składki, stoiska, sponsorzy</dt>
+    <dd><a class="tel" href="tel:+48790004535">790 004 535</a><br>Ireneusz Bożykowski, czwartki 17:00-19:00</dd>
+    <dt>E-mail</dt>
+    <dd><a href="mailto:klub.ekkr@gmail.com">klub.ekkr@gmail.com</a></dd>
+    <dt>Siedziba i dyżur</dt>
+    <dd>ul. Nowolipie 18b, 01-005 Warszawa<br>pierwszy wtorek miesiąca, 17:00-19:00</dd>
+    <dt>Dane stowarzyszenia</dt>
+    <dd>KRS 0000272789, NIP 527-254-97-77, REGON 140856385</dd>
+   </dl>
+   <iframe class="mapa" title="Mapa dojazdu: ul. Nowolipie 18b, Warszawa" src="https://www.google.com/maps?q=Nowolipie+18b,+01-005+Warszawa&amp;output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="kol">
+   <div><p><b>Elitarny Klub Kota Rasowego</b></p><p>ul. Nowolipie 18b, 01-005 Warszawa</p><p><a href="mailto:klub.ekkr@gmail.com">klub.ekkr@gmail.com</a></p></div>
+   <div><p><b>Klub</b></p><p><a href="#wystawy">Wystawy</a></p><p><a href="#hodowle">Hodowle</a></p><p><a href="#o-klubie">O klubie</a></p></div>
+   <div><p><b>Hodowcy</b></p><p><a href="#hodowcy">Dokumenty i opłaty</a></p><p><a href="#czlonkostwo">Członkostwo</a></p><p><a href="#kontakt">Kontakt</a></p></div>
+  </div>
+  <div class="dol">
+   <span>© 2026 Elitarny Klub Kota Rasowego. Członek Felis Polonia i FIFe.</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=ekkr.waw.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+
+  </div>
+ </div>
+</footer>
+<script>
+(function(){var b=document.querySelector('.burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('otwarte');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otwarte');b.setAttribute('aria-expanded',false)}});
+var linki=[].slice.call(m.querySelectorAll('a:not(.klub)'));
+var sek=linki.map(function(a){return document.querySelector(a.getAttribute('href'))});
+addEventListener('scroll',function(){var y=scrollY+120,akt=-1;sek.forEach(function(s,i){if(s&&s.offsetTop<=y)akt=i});linki.forEach(function(a,i){a.classList.toggle('aktywny',i===akt)})},{passive:true});
+})();
+</script>
+</body>
+</html>
